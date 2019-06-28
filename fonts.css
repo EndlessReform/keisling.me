@@ -1,0 +1,28 @@
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('fonts/basiercircle-regular-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('fonts/basiercircle-medium-webfont.woff2');
+	font-weight: 500;
+	font-style: medium;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('fonts/basiercircle-semibold-webfont.woff2');
+	font-weight: 600;
+	font-style: semibold;
+}
+
+
+@font-face {
+	font-family: 'Basier Circle Mono Regular';
+	src: url('fonts/basiercircle-mono-regular-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
