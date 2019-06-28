@@ -21,8 +21,15 @@
 
 
 @font-face {
-	font-family: 'Basier Circle Mono Regular';
-	src: url('fonts/basiercircle-mono-regular-webfont.woff2');
+	font-family: 'Basier Circle Mono';
+	src: url('fonts/basiercirclemono-regular-webfont.woff2');
 	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Basier Circle Mono';
+	src: url('fonts/basiercirclemono-medium-webfont.woff2');
+	font-weight: 500;
 	font-style: normal;
 }
