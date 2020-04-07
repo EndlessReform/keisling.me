@@ -1,0 +1,114 @@
+html {
+	font-size: 8px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Basier Circle';
+	text-decoration: none;
+}
+
+body {
+	background-color: #fff5f2;
+	color: #261447;
+}
+
+nav {
+	align-items: center;
+	background-color: #fff5f2;
+	display: flex;
+	height: 8rem;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 600;
+}
+
+p {
+	font-size: 2rem;
+}
+
+.nv-logo {
+	display: inline-flex;
+	height: 4rem;
+	padding-left: 2rem;
+}
+
+.nv-links {
+	margin-left: auto;
+	padding-right: 1rem;
+}
+
+.nv-link {
+	display: inline-flex;
+	padding-right: 2rem;
+
+	color: #ff3864;
+	font-family: "Basier Circle Mono";
+	font-size: 2rem;
+	font-weight: 500;
+}
+
+.nv-link:hover {
+	color: #261447;
+}
+
+.nv-link:visited {
+	color: #ff3864;
+}
+
+
+.content {
+	padding-top: 10rem;
+}
+
+@media screen and (min-width: 600px) {
+	.content {
+		margin: 0rem 8rem 0rem 8rem;
+	}
+}
+
+
+@media screen and (max-width: 600px) {
+	.content {
+		margin: 0rem 4rem 0rem 4rem;
+	}
+}
+
+.content h2 {
+	font-size: 3rem;
+	font-weight: 400;
+}
+
+.ct-name {
+	color: #ff3864;
+	font-size: 4rem;
+}
+
+.cards {
+	margin-top: 2rem;
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.card {
+	border: .25rem solid #261447;
+	box-shadow: 1rem 1rem #261447;
+	padding: 3rem 2rem;
+	max-width: 40rem;
+}
+
+.card h1 {
+	font-size: 3rem;
+	font-family: "Basier Circle Mono";
+	font-weight: 500;
+}
+
+.card p {
+	margin-top: 1rem;
+}

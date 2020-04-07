@@ -1,0 +1,80 @@
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('../../fonts/basiercircle-regular-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('../../fonts/basiercircle-medium-webfont.woff2');
+	font-weight: 500;
+	font-style: medium;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('../../fonts/basiercircle-semibold-webfont.woff2');
+	font-weight: 600;
+	font-style: semibold;
+}
+
+
+@font-face {
+	font-family: 'Basier Circle Mono';
+	src: url('../../fonts/basiercirclemono-regular-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Basier Circle Mono';
+	src: url('../../fonts/basiercirclemono-medium-webfont.woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+  background-color: #231420;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.redAccent {
+  color: #f49b7f;
+}
+
+.greenAccent {
+  color: #377765;
+}
+
+.wrapper {
+  margin: 0rem 3rem;
+}
+
+.para {
+  margin-top: 3rem;
+  max-width: 50rem;
+  color: #fcfcf6;
+}
+
+
+.welcome_text {
+  font-size: 3rem;
+  font-family: "Basier Circle", sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.welcome_divider {
+  margin: 2rem 0rem;
+  color: #fcfcf6;
+}

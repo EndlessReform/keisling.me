@@ -1,0 +1,25 @@
+{
+  "name": "keisling.me",
+  "version": "1.0.0",
+  "description": "Jacob Keisling's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EndlessReform/keisling.me.git"
+  },
+  "author": "Jacob Keisling",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EndlessReform/keisling.me/issues"
+  },
+  "homepage": "https://github.com/EndlessReform/keisling.me#readme",
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "gatsby": "^2.20.12",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
