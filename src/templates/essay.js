@@ -33,9 +33,10 @@ function main ({props, data}) {
     </Helmet>
     <Title
       headline={post.frontmatter.title}
+      subheadline={post.frontmatter.subtitle}
     ></Title>
     <Meta
-      tags={"Essay"}
+      tags={post.frontmatter.tags}
       word_count={post.wordCount.words}
       pub_date={post.frontmatter.date}
     ></Meta>
@@ -75,6 +76,8 @@ export const query = graphql `
       frontmatter {
         date(formatString: "YYYY-MM-DD")
         title
+        subtitle
+        tags
       }
     }
   }

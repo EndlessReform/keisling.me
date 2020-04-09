@@ -43,7 +43,8 @@ function main ({data}) {
           key={node.id}
           dest={node.fields.slug}
           title={node.frontmatter.title}
-          subtitle={node.excerpt}
+          subtitle={node.frontmatter.subtitle}
+          tags={node.frontmatter.tags}
           date={node.frontmatter.date}
         ></Essay>
        ))
@@ -66,6 +67,8 @@ export const query = graphql`
           }
           frontmatter {
             title
+            subtitle
+            tags
             date(formatString: "YYYY-DD-MM")
           }
           excerpt
