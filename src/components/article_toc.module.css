@@ -1,0 +1,52 @@
+.wrapper {
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: 12rem auto;
+}
+
+.wrapper h2 {
+  font-family: "Basier Circle", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+.wrapper ul {
+  list-style-type: none;
+}
+
+.wrapper ol {
+  list-style-type: katakana;
+}
+
+.wrapper a {
+  font-family: "Basier Circle Mono", monospace;
+  color: #231F20;
+  text-decoration: none;
+}
+
+.wrapper li {
+  margin-bottom: .25rem;
+}
+
+.wrapper a:hover {
+  color: #F49B7F;
+  color: #0A7DC2;
+}
+
+
+.wrapper hr {
+  border: none;
+  height: 1px;
+  margin-top: .25rem;
+  margin-bottom: .5rem;
+
+  color: #231f20;
+  background-color: #231f20;
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 600px) {
+  .wrapper {
+    grid-template-columns: 7.5rem auto;
+  }
+}

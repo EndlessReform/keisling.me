@@ -1,0 +1,17 @@
+.wrapper {
+  background-color: #fcfcf6 !important;
+  color: #231f20;
+
+  font-family: "Basier Circle", sans-serif;
+}
+
+.article_wrapper {
+  margin: 0rem 3rem;
+  max-width: 600px;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) {
+  .article_wrapper {
+    margin: 0rem 1.5rem;
+  }
+}

@@ -35,7 +35,7 @@
 }
 
 * {
-  background-color: #231420;
+  font-family: "Basier Circle", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -57,7 +57,9 @@ a:hover {
 }
 
 .wrapper {
-  margin: 0rem 3rem;
+  background-color: #231F20;
+  padding: .5rem 3rem;
+  min-height: 100vh;
 }
 
 .para {

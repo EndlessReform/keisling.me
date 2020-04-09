@@ -1,0 +1,54 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 33vw auto;
+  margin-bottom: 1.5rem;
+
+  border: 1.5px solid #231F20;
+}
+
+.tag_box {
+  background-color: #0A7DC2;
+  padding: 2px 0rem 2px 3rem;
+  border-right: 1.5px solid #231f20;
+}
+
+.tag_box h3 {
+  color: #fcfcf6;
+  font-weight: 500;
+}
+
+.num_box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  padding-right: 3rem;
+
+  background-color: #F9F7E1;
+}
+
+.num_box h3 {
+  color: #231f20;
+  font-family: "Basier Circle Mono", monospace;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .tag_box {
+    padding-left: 1.5rem;
+  }
+
+  .tag_box h3 {
+    font-size: 1rem;
+  }
+
+  .num_box {
+    padding-right: 1.5rem;
+  }
+
+  .num_box h3 {
+    font-size: .75rem;
+  }
+
+}
+    

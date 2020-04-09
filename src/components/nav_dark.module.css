@@ -1,0 +1,44 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 3rem;
+
+  color: #213f20;
+}
+
+.logo_box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo_box p {
+  font-family: "Basier Circle Mono", monospace;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #213f20;
+}
+
+.logo_box img {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.25rem;
+}
+  
+
+.breadcrumbs {
+  margin-left: 5rem;
+}
+
+.breadcrumbs a {
+  color: #231f20;
+  font-family: "Basier Circle Mono", monospace;
+  text-decoration: none;
+}
+
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}

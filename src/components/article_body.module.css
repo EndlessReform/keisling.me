@@ -1,0 +1,42 @@
+.wrapper h1 {
+  margin-bottom: .5rem;
+  padding-bottom: .25rem;
+
+  border-bottom: 1.5px solid black;
+  
+  font-family: "Basier Circle Mono", monospace;
+  font-weight: 500;
+}
+
+
+.wrapper h2 {
+  margin-bottom: .75rem;
+  font-family: "Basier Circle Mono", monospace;
+  font-weight: 400;
+}
+
+.wrapper h3 {
+  margin-bottom: .5rem;
+  font-family: "Basier Circle Mono", monospace;
+  font-weight: 400;
+}
+
+.wrapper hr {
+  margin-bottom: 1.25rem;
+  max-width: 50rem;
+}
+
+.wrapper p {
+  font-size: 1.20rem;
+  line-height: 148%;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .wrapper p {
+    font-size: 1rem;
+  }
+}
