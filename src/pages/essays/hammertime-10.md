@@ -1,10 +1,10 @@
+---
+title: "Hammertime 10"
+subtitle: "Instrumental rationality "
+tags: "Rat"
+date: 2020-04-09
+---
 
----
-Title: "Hammertime 10"
-Subtitle: "Instrumental rationality "
-Tags: "Rat"
-Date: 2020-04-09
----
 # Hammertime 10: Murphyjitsu
 
 # Abstract (2.5 min)
