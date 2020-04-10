@@ -3,7 +3,8 @@
 }
 
 .wrapper h1 {
-  margin-bottom: .5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   padding-bottom: .25rem;
 
   border-bottom: 1.5px solid black;
@@ -31,12 +32,32 @@
 }
 
 .wrapper p {
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
 
   font-size: 1.20rem;
-  line-height: 148%;
+  line-height: 140%;
 }
 
+.wrapper ul {
+  margin: 1rem 0rem;
+  font-size: 1.20rem;
+  line-height: 140%;
+}
+
+.wrapper ul > li > ul { 
+  margin: .5rem 0rem .5rem 2rem;
+  font-size: 1.20rem;
+  line-height: 140%;
+}
+
+.wrapper ul > li > ol { 
+  margin: .5rem 0rem .5rem 2rem;
+  font-size: 1.20rem;
+  line-height: 140%;
+  list-style-type: upper-alpha;
+}
+  
+  
 @media screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .wrapper h1 {
     font-size: 1.5rem;
