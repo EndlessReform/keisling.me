@@ -5,8 +5,6 @@ tags: "Rat"
 date: 2020-04-09
 ---
 
-# Hammertime 10: Murphyjitsu
-
 # Abstract (2.5 min)
 Parameter: Find a project that doesn’t seem to be happening and, over the next week, pull out all the stops to make it happen: reminders, doubling time, etc. etc. Anticipate how the project might fail and try to work through failure modes.
 
