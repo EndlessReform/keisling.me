@@ -61,3 +61,35 @@
   align-items: center;
   justify-content: flex-end;
 }
+
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) {
+  .wrapper {
+    padding: 1rem 1.5rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .essay_wrapper {
+    display: block;
+  }
+
+  .essay_wrapper h1 {
+    font-size: 1.5rem;
+  }
+
+  .essay_wrapper h2 {
+    display: none;
+  }
+
+  .metadata {
+    justify-content: flex-start;
+  }
+
+  .metadata p {
+    margin-top: .5rem;
+    margin-left: 0rem;
+    margin-right: 2rem;
+  }
+}

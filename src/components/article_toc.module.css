@@ -1,5 +1,6 @@
 .wrapper {
   margin: 2rem 0rem;
+  max-width: 600px;
   display: grid;
   grid-template-columns: 12rem auto;
 }
@@ -47,6 +48,18 @@
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
   .wrapper {
-    grid-template-columns: 7.5rem auto;
+    display: block;
+  }
+
+  .wrapper h2 {
+    font-size: 1.2rem;
+  }
+
+  .wrapper ol {
+    margin-left: 2rem;
+  }
+
+  .wrapper a {
+    font-size: 1rem;
   }
 }

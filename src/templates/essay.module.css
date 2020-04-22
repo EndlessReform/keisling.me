@@ -6,8 +6,8 @@
 }
 
 .article_wrapper {
-  margin: 0rem 3rem;
-  max-width: 600px;
+  margin: 0rem 6rem;
+  max-width: 50rem;
 }
 
 @media screen and (min-device-width: 300px) and (max-device-width: 600px) {

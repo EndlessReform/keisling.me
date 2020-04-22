@@ -80,3 +80,13 @@ a:hover {
   margin: 2rem 0rem;
   color: #fcfcf6;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .wrapper {
+    padding: .5rem 1.5rem;
+  }
+
+  .welcome_text {
+    font-size: 2rem;
+  }
+}

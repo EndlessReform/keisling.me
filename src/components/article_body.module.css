@@ -3,9 +3,9 @@
 }
 
 .wrapper h1 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-bottom: .25rem;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: .5rem;
 
   border-bottom: 1.5px solid black;
   
@@ -32,26 +32,31 @@
 }
 
 .wrapper p {
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
 
-  font-size: 1.20rem;
+  font-size: 1.25rem;
   line-height: 140%;
 }
 
 .wrapper ul {
-  margin: 1rem 0rem;
+  margin-left: 2rem;
+}
+
+.wrapper li {
+  margin-bottom: .5rem;
   font-size: 1.20rem;
   line-height: 140%;
 }
 
 .wrapper ul > li > ul { 
-  margin: .5rem 0rem .5rem 2rem;
+  margin-left: 2rem;
   font-size: 1.20rem;
   line-height: 140%;
 }
 
 .wrapper ul > li > ol { 
-  margin: .5rem 0rem .5rem 2rem;
+  margin-top: -0.75rem;
+  margin-left: 2rem;
   font-size: 1.20rem;
   line-height: 140%;
   list-style-type: upper-alpha;
@@ -65,5 +70,15 @@
 
   .wrapper p {
     font-size: 1rem;
+  }
+
+  .wrapper ul {
+    font-size: 1rem;
+  }
+  .wrapper ul > li> ul {
+    font-size: inherit;
+  }
+  .wrapper ul > li> ol {
+    font-size: inherit;
   }
 }
