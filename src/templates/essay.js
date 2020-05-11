@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet"
 
 import styles from "./essay.module.css"
 
+import Navbar from "../components/nav_dark.js"
 import Title from "../components/article_title.js"
 import Body from "../components/article_body.js"
 import Meta from "../components/article_meta.js"
@@ -31,28 +32,33 @@ function main ({props, data}) {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
     </Helmet>
+    <div style={{padding: "1rem 3rem 0 3rem"}}>
+      <Navbar />
+    </div>
     <Title
       headline={post.frontmatter.title}
       subheadline={post.frontmatter.subtitle}
     ></Title>
-    <Meta
-      tags={post.frontmatter.tags}
-      word_count={post.wordCount.words}
-      pub_date={post.frontmatter.date}
-    ></Meta>
-    <div className={styles.article_wrapper}>
       <Body>
-        <TOC>
-          {data.markdownRemark.headings.map(({ value }) => {
-            return(
-              <TOContent content={value}></TOContent>
-            )
-            })
-          }
-        </TOC>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div className={styles.article_wrapper}>
+        <div className={styles.extra_col}>
+          <TOC>
+            {data.markdownRemark.headings.map(({ value }) => {
+              return(
+                <TOContent content={value}></TOContent>
+              )
+              })
+            }
+          </TOC>
+          <Meta
+            tags={post.frontmatter.tags}
+            word_count={post.wordCount.words}
+            pub_date={post.frontmatter.date}
+          ></Meta>
+        </div>
+        <div className={styles.main_col} dangerouslySetInnerHTML={{ __html: post.html }} />
+      </div>
       </Body>
-    </div>
   </div>
   )
 }

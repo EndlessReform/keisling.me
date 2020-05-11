@@ -1,8 +1,6 @@
 .wrapper {
   margin: 2rem 0rem;
   max-width: 600px;
-  display: grid;
-  grid-template-columns: 12rem auto;
 }
 
 .wrapper h2 {
@@ -15,12 +13,18 @@
   list-style-type: none;
 }
 
+.wrapper ol > li::before {
+  content: "";
+}
+
 .wrapper ol {
   list-style-type: katakana;
+  margin-left: 2.5rem;
 }
 
 .wrapper a {
   font-family: "Basier Circle Mono", monospace;
+  font-size: 1rem;
   color: #231F20;
   text-decoration: none;
 }
@@ -32,6 +36,7 @@
 .wrapper a:hover {
   color: #F49B7F;
   color: #0A7DC2;
+  text-decoration: none;
 }
 
 
@@ -61,5 +66,16 @@
 
   .wrapper a {
     font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 12rem auto;
+  }
+
+  .wrapper ol {
+    margin-left: 0rem;
   }
 }

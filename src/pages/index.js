@@ -30,7 +30,7 @@ class example extends React.Component {
         </Helmet>
         <Navbar></Navbar>
         <div className={styles.para}>
-          <h1 className={styles.welcome_text}>Hi! I'm <a href={'https://www.google.com'} className={styles.redAccent}>Jacob Lowell Keisling</a>, and this is my website.</h1>
+          <h1 className={styles.welcome_text}>Hi! I'm <a href={'https://www.github.com/endlessreform'} className={styles.redAccent}>Jacob Lowell Keisling</a>, and this is my website.</h1>
           <hr className={styles.welcome_divider}/>
           <h1 className={styles.welcome_text}>It's still in progress, but you can check out my <Link to={'./essays'} className={styles.greenAccent}>essays</Link> here.</h1>
         </div>
