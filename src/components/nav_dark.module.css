@@ -12,6 +12,7 @@
 .logo_box {
   display: flex;
   align-items: center;
+	justify-content: center;
   flex-direction: row;
 }
 
@@ -22,8 +23,8 @@
 }
 
 .logo_box img {
-  width: 2rem;
-  height: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
   margin-right: 1.25rem;
 }
   
@@ -34,10 +35,17 @@
 
 .breadcrumbs a {
   color: #231f20;
-  font-family: "Basier Circle Mono", monospace;
+	margin-left: 2rem;
+  font-family: "Basier Circle", sans-serif;
   text-decoration: none;
 }
 
 .breadcrumbs a:hover {
   text-decoration: underline;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+	.breadcrumbs {
+		display: none;
+	}
 }

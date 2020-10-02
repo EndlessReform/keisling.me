@@ -1,0 +1,49 @@
+.wrapper {
+	color: #75787d;
+}
+
+.wrapper hr {
+	color: #75787d;
+}
+
+.icons {
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	display: flex;
+	align-items: center;
+}
+
+.icons img {
+	max-height: 1.5rem;
+	max-width: 1.5rem;
+}
+
+.icons a {
+	margin-left: 2rem;
+	color: #75787d;
+}
+
+.icons a:hover {
+	font-weight: semibold;
+}
+
+.icons p {
+	margin-left: auto;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+	.icons {
+		flex-wrap: wrap !important;
+		flex-direction: column;
+		max-width: calc(100vw - 3rem) !important;
+	}
+
+	.icons a {
+		margin-left: 0;
+		margin-top: .5rem;
+	}
+
+	.icons p {
+		display: none;
+	}
+}

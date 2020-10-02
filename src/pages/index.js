@@ -1,10 +1,12 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql} from "gatsby"
 import { Helmet } from "react-helmet"
 
 import styles from "./index.module.css"
 
-import Navbar from "../components/nav.js"
+import Navbar from "../components/nav_dark.js"
+// import Gallery from "../components/gallery.js"
+import Footer from "../components/footer.js"
 
 /*
 export default () => (
@@ -30,12 +32,119 @@ class example extends React.Component {
         </Helmet>
         <Navbar></Navbar>
         <div className={styles.para}>
-          <h1 className={styles.welcome_text}>Hi! I'm <a href={'https://www.github.com/endlessreform'} className={styles.redAccent}>Jacob Lowell Keisling</a>, and this is my website.</h1>
-          <hr className={styles.welcome_divider}/>
-          <h1 className={styles.welcome_text}>It's still in progress, but you can check out my <Link to={'./essays'} className={styles.greenAccent}>essays</Link> here.</h1>
+          <h1 className={styles.welcome_text}>Hi! I'm <a href={'https://www.github.com/endlessreform'} className={styles.redAccent}>Jacob Keisling,</a> <br />and this is my website.</h1>
         </div>
+        <div id={'writing'} className={styles.cat}>
+          <h1>Writing</h1>
+          <div className={styles.listLarge}>
+            <a className={styles.titleStress}>Something is wrong with modern computers</a>
+            <div className={styles.titleMeta}>
+              <p className={styles.date}>2020-06-28</p>
+            </div>
+          </div>
+          <div className={styles.listLarge}>
+            <a className={styles.titleStress}>Why progress has stopped</a>
+            <div className={styles.titleMeta}>
+              <p className={styles.date}>2020-06-28</p>
+            </div>
+          </div>
+          <div className={styles.listLarge}>
+            <a className={styles.titleStress}>Why everyone should have their own blog</a>
+            <div className={styles.titleMeta}>
+              <p className={styles.date}>2020-06-28</p>
+            </div>
+          </div>
+          <h3><a href={'https://www.keisling.me/writing/'}>2 more essays 🡪</a></h3>
+        </div>
+        <div id={'reading'} className={styles.cat}>
+          <h1>Reading</h1>
+          <div className={styles.listLarge}>
+            <a className={styles.titleStress}>The Road to Somewhere</a>
+            <p className={styles.titleAdditional}>David Goodwin</p>
+            <div className={styles.titleMeta}>
+              <p className={styles.date}>2020-06-28</p>
+            </div>
+          </div>
+          <h3><a href={'https://www.keisling.me/reading/'}>5 more books 🡪</a></h3>
+        </div>
+        <div className={styles.cat}>
+          <h1>Blogroll</h1>
+          <div className={styles.threeWrapper}>
+            <div className={styles.threeBody}>
+              <h2>Art and Design</h2>
+              <ul>
+                <li>
+                  <a href={''}>Typewolf</a>
+                  <p>🡪</p>
+                </li>
+                <li>
+                  <a href={''}>httpref</a>
+                  <p>🡪</p>
+                </li>
+                <li>
+                  <a href={''}>Font Review Journal</a>
+                  <p>🡪</p>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.threeBody}>
+              <h2>Tech</h2>
+              <ul>
+                <li>
+                  <a href={''}>MacStories</a>
+                  <p>🡪</p>
+                </li>
+                <li>
+                  <a href={''}>Stratechery</a>
+                  <p>🡪</p>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.threeBody}>
+              <h2>Misc</h2>
+              <ul>
+                <li>
+                  <a href={''}>Agenty Duck</a>
+                  <p>🡪</p>
+                </li>
+                <li>
+                  <a href={''}>Marginal Revolution</a>
+                  <p>🡪</p>
+                </li>
+                <li>
+                  <a href={''}>Scholar's Stage</a>
+                  <p>🡪</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+				<Footer />
       </div>
     )
   }
 }
 export default example;
+
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      totalCount
+      edges {
+        node {
+          id
+          fields {
+            slug
+          }
+          frontmatter {
+            title
+            subtitle
+            tags
+            date(formatString: "YYYY-DD-MM")
+          }
+          excerpt
+        }
+      }
+    }
+  }
+`

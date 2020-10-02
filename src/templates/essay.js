@@ -9,6 +9,7 @@ import Title from "../components/article_title.js"
 import Body from "../components/article_body.js"
 import Meta from "../components/article_meta.js"
 import TOC from "../components/article_toc.js"
+import Footer from "../components/footer.js"
 
 function TOContent (props) {
   return (
@@ -32,33 +33,19 @@ function main ({props, data}) {
       <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
     </Helmet>
-    <div style={{padding: "1rem 3rem 0 3rem"}}>
-      <Navbar />
-    </div>
+    <Navbar logo_color={"green"}/>
     <Title
       headline={post.frontmatter.title}
       subheadline={post.frontmatter.subtitle}
     ></Title>
-      <Body>
-        <div className={styles.article_wrapper}>
-        <div className={styles.extra_col}>
-          <TOC>
-            {data.markdownRemark.headings.map(({ value }) => {
-              return(
-                <TOContent content={value}></TOContent>
-              )
-              })
-            }
-          </TOC>
-          <Meta
-            tags={post.frontmatter.tags}
-            word_count={post.wordCount.words}
-            pub_date={post.frontmatter.date}
-          ></Meta>
-        </div>
-        <div className={styles.main_col} dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-      </Body>
+    <Body>
+      <div className={styles.article_wrapper}>
+      <div className={styles.main_col} dangerouslySetInnerHTML={{ __html: post.html }} />
+    </div>
+    </Body>
+    <div className={styles.footer}>
+      <Footer />
+    </div>
   </div>
   )
 }

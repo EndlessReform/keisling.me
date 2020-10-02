@@ -1,0 +1,8 @@
+.wrapper {
+	margin-top: 1.5rem;
+}
+.wrapper h1 {
+	font-family: "Basier Circle Mono", monospace;
+	font-size: 1.5rem;
+	font-weight: normal;
+}
