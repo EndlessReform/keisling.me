@@ -54,7 +54,7 @@ a:hover {
 
 .wrapper {
   /* background-color: #231F20; */
-	background-color: #fcfcf6;
+  background-color: #fcfcf6;
   /* padding: 1rem 3rem; */
   padding: 3rem 6rem;
   min-height: 100vh;
@@ -166,10 +166,21 @@ a:hover {
 
 @media screen and (min-device-width: 320px) and (max-device-width: 600px) {
   .wrapper {
-    padding: .5rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   .welcome_text {
     font-size: 2rem;
+  }
+  
+  .threeWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .threeBody:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .titleAdditional {
+    display: none;
   }
 }

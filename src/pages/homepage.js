@@ -4,7 +4,6 @@ import { Helmet } from "react-helmet"
 
 import Navbar from "../components/nav_dark.js"
 import Footer from "../components/footer.js"
-import { render } from "react-dom"
 
 function ThreeListItem (props) {
     return(
