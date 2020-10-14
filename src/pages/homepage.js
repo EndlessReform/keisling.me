@@ -111,6 +111,7 @@ class homepage extends React.Component {
                                 <ThreeListItem link="https://www.typewolf.com/" linkName = "Typewolf" />
                                 <ThreeListItem link="https://letterformarchive.org/" linkName = "Letterform Archive" />
                                 <ThreeListItem link='https://www.ecommercestack.co/' linkName = "Marketing Inspo" />
+                                <ThreeListItem link='https://artvee.com' linkName = "Artvee" />
                             </ul>
                        </div>                        
                        <div className={styles.threeBody}>
