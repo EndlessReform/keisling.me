@@ -1,0 +1,185 @@
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('../../fonts/basiercircle-regular-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('../../fonts/basiercircle-medium-webfont.woff2');
+	font-weight: 500;
+	font-style: medium;
+}
+
+@font-face {
+	font-family: 'Basier Circle';
+	src: url('../../fonts/basiercircle-semibold-webfont.woff2');
+	font-weight: 600;
+	font-style: semibold;
+}
+
+
+@font-face {
+	font-family: 'Basier Circle Mono';
+	src: url('../../fonts/basiercirclemono-regular-webfont.woff2');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Basier Circle Mono';
+	src: url('../../fonts/basiercirclemono-medium-webfont.woff2');
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+  font-family: "Basier Circle", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.redAccent {
+  color: #f49b7f;
+}
+
+.wrapper {
+  /* background-color: #231F20; */
+  background-color: #fcfcf6;
+  /* padding: 1rem 3rem; */
+  padding: 3rem 6rem;
+  min-height: 100vh;
+}
+
+.para {
+  margin-top: 3rem;
+  max-width: 50rem;
+  color: #231f20;
+}
+
+.cat {
+  border-top: 2px solid #faf0f5;
+  margin-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.cat h1 {
+  margin-bottom: 1rem;
+  font-family: 'Basier Circle Mono', monospace;
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+.cat h3 > a {
+  color: #1d64cc;
+  font-family: 'Basier Circle Mono', monospace;
+  font-weight: 500;
+}
+
+.listLarge {
+  display: flex;
+  max-width: 60rem;
+  border-bottom: 1px solid black;
+  margin-bottom: .5rem;
+  padding-bottom: .5rem;
+  font-size: 1.25rem;
+}
+
+.titleStress {
+  font-weight: 500;
+}
+
+.titleStress:hover {
+  text-decoration: none;
+  color: #1d64cc;
+}
+
+.titleMeta { margin-left: auto;
+}
+
+.titleAdditional {
+  position: absolute;
+  margin-left: 20rem;
+}
+.date {
+  font-size: 1rem;
+  font-family: 'Basier Circle Mono', monospace;
+}
+
+.welcome_text {
+  margin-bottom: 2rem;
+
+  font-size: 3rem;
+  font-family: "Basier Circle", sans-serif;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.threeWrapper {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5rem;
+
+}
+
+.threeBody h2 {
+  margin-bottom: .75rem;
+
+  font-family: 'Basier Circle Mono', monospace;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.threeBody li {
+  display: flex;
+  list-style: none;
+  border-bottom: 1px solid black;
+  padding-bottom: .33rem;
+  margin-bottom: .4rem;
+}
+
+.threeBody li p {
+  margin-left: auto;
+  color: #1d64cc;
+}
+
+.threeBody a {
+  color: black;
+  font-size: 1.1rem;
+}
+
+.threeBody a:hover {
+  text-decoration: none;
+  color: #1d64cc;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 600px) {
+  .wrapper {
+    padding: 1rem 1.5rem;
+  }
+
+  .welcome_text {
+    font-size: 2rem;
+  }
+  
+  .threeWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .threeBody:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+  .titleAdditional {
+    display: none;
+  }
+}
