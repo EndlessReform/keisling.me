@@ -1,5 +1,5 @@
 import React from "react"
-import styles from "./index.module.css"
+import styles from "./homepage.module.css"
 import { Helmet } from "react-helmet"
 
 import Navbar from "../components/nav_dark.js"
@@ -38,7 +38,8 @@ class homepage extends React.Component {
                             <h2>Latin</h2>
                             <ul>
                                 <ThreeListItem link = 'https://canvas.uchicago.edu/courses/29755' linkName = "Canvas" />
-                                <ThreeListItem link = 'https://logeion.uchicago.ed/lexidium' linkName = "Logeion" />
+                                <ThreeListItem link = 'https://docs.google.com/document/d/1fHAIDv9E3EUpDDAomBIRxZGo4KOtdp1rOgKvkq-wY14/edit' linkName = "Word Journal" />
+                                <ThreeListItem link = 'https://logeion.uchicago.edu/lexidium' linkName = "Logeion" />
                                 <ThreeListItem link = 'https://www.thelatinlibrary.com/' linkName = "Latin Library" />
                                 <ThreeListItem link = "http://www.perseus.tufts.edu/hopper/" linkName = "Perseus" />
                             </ul>
