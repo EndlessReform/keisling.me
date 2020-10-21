@@ -57,6 +57,7 @@ class homepage extends React.Component {
                             <h2>Architectures</h2>
                             <ul>
                                 <ThreeListItem link='https://canvas.uchicago.edu/courses/31047' linkName = "Canvas" />
+                                <ThreeListItem link='https://sites.google.com/uchicago.edu/cs222-fall-2020?pli=1&authuser=2'linkName = "Homepage" />
                                 <ThreeListItem link='https://uchicago.hosted.panopto.com/Panopto/Pages/Home.aspx' linkName = "Panopto" />
                                 <ThreeListItem link='https://piazza.com' linkName = "Piazza" />
                             </ul>
