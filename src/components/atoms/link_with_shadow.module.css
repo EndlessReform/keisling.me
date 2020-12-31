@@ -1,0 +1,16 @@
+.link_with_shadow {
+  border: 2px solid #231f20;
+  background-color: #fcfcf6;
+  color: #231f20;
+  box-shadow: .5rem .5rem #FAF0F5;
+  margin-top: 1rem !important; 
+  padding: .5rem;
+
+  font-family: 'Basier Circle Mono', monospace;
+  font-size: 1.25rem;
+}
+
+.link_with_shadow:hover {
+  color: #f49b7f;
+  text-decoration: none;
+}

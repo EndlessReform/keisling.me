@@ -1,0 +1,14 @@
+.wrapper {
+    display: flex;
+    height: 30rem;
+
+    background-image: url('../../assets/illustrations/kisurin.svg');
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 660px) {
+  .wrapper {
+      background-position: center;
+  }
+}

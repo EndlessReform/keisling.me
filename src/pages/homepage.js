@@ -2,6 +2,7 @@ import React from "react"
 import styles from "./homepage.module.css"
 import { Helmet } from "react-helmet"
 
+// Organisms
 import Navbar from "../components/nav_dark.js"
 import Footer from "../components/footer.js"
 
@@ -37,31 +38,12 @@ class homepage extends React.Component {
                         <div className={styles.threeBody}>
                             <h2>Latin</h2>
                             <ul>
-                                <ThreeListItem link = 'https://canvas.uchicago.edu/courses/29755' linkName = "Canvas" />
-                                <ThreeListItem link = 'https://docs.google.com/document/d/1fHAIDv9E3EUpDDAomBIRxZGo4KOtdp1rOgKvkq-wY14/edit' linkName = "Word Journal" />
                                 <ThreeListItem link = 'https://logeion.uchicago.edu/lexidium' linkName = "Logeion" />
                                 <ThreeListItem link = 'https://www.thelatinlibrary.com/' linkName = "Latin Library" />
                                 <ThreeListItem link = "http://www.perseus.tufts.edu/hopper/" linkName = "Perseus" />
+                                <ThreeListItem link = "http://www.logical.ai/arma/" linkName = "AI Scansion" />
                             </ul>
                         </div>
-                        <div className={styles.threeBody}>
-                            <h2>Discrete</h2>
-                            <ul>
-                                <ThreeListItem link="https://canvas.uchicago.edu/courses/31388" linkName = "Canvas" />
-                                <ThreeListItem link='https://uchicago.hosted.panopto.com/Panopto/Pages/Home.aspx' linkName = "Panopto" />
-                                <ThreeListItem link='https://www.gradescope.com/' linkName = "Gradescope" />
-                                <ThreeListItem link='http://incredible.pm/' linkName = "Incredible Proof Machine" />
-                            </ul>
-                       </div>                        
-                       <div className={styles.threeBody}>
-                            <h2>Architectures</h2>
-                            <ul>
-                                <ThreeListItem link='https://canvas.uchicago.edu/courses/31047' linkName = "Canvas" />
-                                <ThreeListItem link='https://sites.google.com/uchicago.edu/cs222-fall-2020?pli=1&authuser=2'linkName = "Homepage" />
-                                <ThreeListItem link='https://uchicago.hosted.panopto.com/Panopto/Pages/Home.aspx' linkName = "Panopto" />
-                                <ThreeListItem link='https://piazza.com' linkName = "Piazza" />
-                            </ul>
-                       </div>
                     </div>
                 </div>
                 <div className={styles.cat}>

@@ -1,0 +1,42 @@
+.wrapper {
+    margin: 2rem 0rem;
+    display: flex;
+    max-width: 30rem;
+}
+
+.meta {
+    width: 10rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.list {
+    width: 20rem;
+}
+
+.list li {
+    border-bottom: 1px solid;
+    padding-bottom: .33rem;
+    margin-bottom: .5rem;
+
+    list-style: none;
+}
+
+.list li > a {
+    color: #231F20;
+    text-decoration: none;
+}
+
+.list li:last-child {
+    border-bottom: none;
+    margin-bottom: 1rem;
+}
+
+.more {
+    padding: .25rem .5rem;
+    background-color: #231F20;
+    color: #fcfcf6;
+}
