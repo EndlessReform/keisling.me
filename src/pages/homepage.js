@@ -65,6 +65,7 @@ class homepage extends React.Component {
                                 <ThreeListItem link='https://www.imabi.net/' linkName = "Imabi" />
                                 <ThreeListItem link='https://tangorin.com/' linkName = "Tangorin" />
                                 <ThreeListItem link='https://www3.nhk.or.jp/news/easy/' linkName = "NHK Easy News" />
+                                <ThreeListItem link='https://jlptsensei.com/jlpt-n4-grammar-list/' linkName = "JLPT N4 Points" />
                                 <ThreeListItem link='https://community.wanikani.com/' linkName = "WaniKani Forums" />
                             </ul>
                        </div>                        
