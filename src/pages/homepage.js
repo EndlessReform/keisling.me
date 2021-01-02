@@ -102,6 +102,7 @@ class homepage extends React.Component {
                        <div className={styles.threeBody}>
                             <h2>Kick back</h2>
                             <ul>
+                                <ThreeListItem link='https://www.youtube.com/playlist?list=PL0IctxYlofuGhRIrM06-_e_9QOcXE_7kp' linkName = "Study Playlist" />
                                 <ThreeListItem link='https://news.ycombinator.com/news' linkName = "Hacker News" />
                                 <ThreeListItem link='https://shapez.io/' linkName = "Shapez" />
                                 <ThreeListItem 
