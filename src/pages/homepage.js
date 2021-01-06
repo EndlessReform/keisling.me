@@ -41,7 +41,7 @@ class homepage extends React.Component {
                                 <ThreeListItem link = 'https://logeion.uchicago.edu/lexidium' linkName = "Logeion" />
                                 <ThreeListItem link = 'https://www.thelatinlibrary.com/' linkName = "Latin Library" />
                                 <ThreeListItem link = "http://www.perseus.tufts.edu/hopper/" linkName = "Perseus" />
-                                <ThreeListItem link = "http://www.logical.ai/arma/" linkName = "AI Scansion" />
+                                <ThreeListItem link = "https://www.hexameter.co/home" linkName = "Hexameter Practice" />
                             </ul>
                         </div>
                     </div>
