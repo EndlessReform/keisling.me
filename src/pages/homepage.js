@@ -106,7 +106,7 @@ class homepage extends React.Component {
                                 <ThreeListItem link='https://news.ycombinator.com/news' linkName = "Hacker News" />
                                 <ThreeListItem link='https://shapez.io/' linkName = "Shapez" />
                                 <ThreeListItem 
-                                    link='https://rooms.lib.uchicago.edu/seats?lid=4267&gid=23823&c=-1' 
+                                    link='https://csl.uchicago.edu/node/133556' 
                                     linkName = "UChicago Study Seats" 
                                 />
                             </ul>
