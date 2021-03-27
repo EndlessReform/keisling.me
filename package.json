@@ -36,10 +36,11 @@
   },
   "devDependencies": {
     "@babel/core": "^7.13.13",
-    "@storybook/addon-actions": "^6.1.21",
-    "@storybook/addon-essentials": "^6.1.21",
-    "@storybook/addon-links": "^6.1.21",
-    "@storybook/react": "^6.1.21",
+    "@storybook/addon-actions": "^6.2.0-rc.10",
+    "@storybook/addon-essentials": "^6.2.0-rc.10",
+    "@storybook/addon-links": "^6.2.0-rc.10",
+    "@storybook/builder-webpack5": "^6.2.0-rc.10",
+    "@storybook/react": "^6.2.0-rc.10",
     "babel-loader": "^8.2.2"
   }
 }
