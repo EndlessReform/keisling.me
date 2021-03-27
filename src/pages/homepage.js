@@ -15,7 +15,7 @@ function ThreeListItem (props) {
     )
 }
 
-class homepage extends React.Component {
+class Homepage extends React.Component {
     render() { 
         return(
             <div className={styles.wrapper}>
@@ -118,4 +118,4 @@ class homepage extends React.Component {
         )
     }
 }
-export default homepage;
+export default Homepage;
